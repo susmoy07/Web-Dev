@@ -1,0 +1,179 @@
+/* .start{
+    border-bottom: 1px solid var(--font-primary-color);
+} */
+/* <!-- ......................************................... --> */
+
+.container {
+    background-color: var(--background-color);
+    
+}
+
+.header-container {
+    height: 100%;
+    background-image: url(./image/nab/back\ bar.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 540px;
+    padding: 0px 50px;
+}
+
+/* <!-- ......................************................... --> */
+
+
+/* <!-- This is nab bar start --> */
+
+.nab {
+    color: var(--font-primary-color);
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: 36px;
+    padding-top: 20px;
+}
+
+.start {
+    width: 216.77px;
+    text-align: left;
+}
+
+.right-logo {
+    width: 216.77px;
+    text-align: right;
+}
+/* <!-- This is nab bar end --> */
+
+/* <!-- ......................************................... --> */
+
+/* <!-- This is banner start --> */
+
+.banner-container {
+    padding-top: 20px;
+}
+/* <!-- This is banner description start --> */
+
+.banner-title h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 146px;
+    word-spacing: 2.5px;
+}
+
+.banner-text p {
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 40px 0px;
+    letter-spacing: 1.3px;
+    word-spacing: 4px;
+}
+/* <!-- This is banner description end --> */
+
+/* <!-- This is banner click start --> */
+/* flex+border*/
+.banner-mother {
+    justify-content: space-between;
+    display: flex;
+    border-top: 1px solid var(--font-primary-color);
+    border-bottom: 1px solid var(--font-primary-color);
+}
+
+.banner-h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 40px;
+    padding-bottom: 60px;
+}
+/* h1+icon */
+.clicl-icon {
+    display: flex;
+    border-bottom: 1px solid var(--font-primary-color);
+    gap: 10px;
+}
+/* icon */
+.icon1 {
+    height: 60px;
+    width: 60px;
+}
+
+/* image */
+.banner-image {
+    background-color: var(--font-primary-color);
+    width: fit-content;
+}
+
+#banner-image {
+    height: 400px;
+}
+/* <!-- This is banner click end --> */
+
+/* <!-- ......................************................... --> */
+
+/* <!-- This is banner portfolio start --> */
+.banner-project{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+.p1 h1{
+    font-weight: bolder;
+    font-size: 140px;
+    padding-bottom: 10px;
+}
+.p1 h2{
+    font-weight: bolder;
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/* <!-- This is banner portfolio end --> */
+
+/* <!-- ......................************................... --> */
+
+
+
+/* for mobile */
+@media only screen and  (min-width:200px) and (max-width:576px){
+    .nab{
+        font-size: 20px;
+    }
+    .header-container {
+        background-size: 250px;
+        background-position: center top;
+     
+    }
+
+    .banner-text p {
+        letter-spacing: .5px;
+        word-spacing: 1px;
+    }
+
+    #banner-image {
+        height: 200px;
+    }
+
+    .banner-title h1 {
+        letter-spacing: 1px;
+        font-size: 53px;
+        /* text-align: justify; */
+    }
+
+    .banner-project{
+            flex-direction: column;
+    }  
+    .p1 h1{
+        font-size: 75px;
+    }
+    .p1 h2{
+        font-size: 15px;
+    } 
+    .banner-h1 {
+        font-size: 20px;
+        padding-bottom: 30px;
+
+    }
+    .icon1 {
+        height: 30px;
+        width: 30px;
+    }
+}
